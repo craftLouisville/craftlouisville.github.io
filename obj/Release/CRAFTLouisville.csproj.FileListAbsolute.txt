@@ -1,0 +1,36 @@
+E:\Work Laptop 2\Documents\Visual Studio 2013\Projects\CRAFTLouisville\CRAFTLouisville\bin\CRAFTLouisville.dll.config
+E:\Work Laptop 2\Documents\Visual Studio 2013\Projects\CRAFTLouisville\CRAFTLouisville\bin\CRAFTLouisville.dll
+E:\Work Laptop 2\Documents\Visual Studio 2013\Projects\CRAFTLouisville\CRAFTLouisville\bin\CRAFTLouisville.pdb
+E:\Work Laptop 2\Documents\Visual Studio 2013\Projects\CRAFTLouisville\CRAFTLouisville\bin\Microsoft.AI.Agent.Intercept.dll
+E:\Work Laptop 2\Documents\Visual Studio 2013\Projects\CRAFTLouisville\CRAFTLouisville\bin\Microsoft.AI.DependencyCollector.dll
+E:\Work Laptop 2\Documents\Visual Studio 2013\Projects\CRAFTLouisville\CRAFTLouisville\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\Work Laptop 2\Documents\Visual Studio 2013\Projects\CRAFTLouisville\CRAFTLouisville\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\Work Laptop 2\Documents\Visual Studio 2013\Projects\CRAFTLouisville\CRAFTLouisville\bin\Microsoft.AI.Web.dll
+E:\Work Laptop 2\Documents\Visual Studio 2013\Projects\CRAFTLouisville\CRAFTLouisville\bin\Microsoft.AI.WindowsServer.dll
+E:\Work Laptop 2\Documents\Visual Studio 2013\Projects\CRAFTLouisville\CRAFTLouisville\bin\Microsoft.ApplicationInsights.dll
+E:\Work Laptop 2\Documents\Visual Studio 2013\Projects\CRAFTLouisville\CRAFTLouisville\bin\Microsoft.AI.DependencyCollector.xml
+E:\Work Laptop 2\Documents\Visual Studio 2013\Projects\CRAFTLouisville\CRAFTLouisville\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\Work Laptop 2\Documents\Visual Studio 2013\Projects\CRAFTLouisville\CRAFTLouisville\bin\Microsoft.AI.Web.xml
+E:\Work Laptop 2\Documents\Visual Studio 2013\Projects\CRAFTLouisville\CRAFTLouisville\bin\Microsoft.AI.WindowsServer.xml
+E:\Work Laptop 2\Documents\Visual Studio 2013\Projects\CRAFTLouisville\CRAFTLouisville\bin\Microsoft.ApplicationInsights.xml
+E:\Work Laptop 2\Documents\Visual Studio 2013\Projects\CRAFTLouisville\CRAFTLouisville\obj\Release\CRAFTLouisville.dll
+E:\Work Laptop 2\Documents\Visual Studio 2013\Projects\CRAFTLouisville\CRAFTLouisville\obj\Release\CRAFTLouisville.pdb
+E:\Work Laptop 2\Documents\Visual Studio 2013\Projects\CRAFTLouisville\CRAFTLouisville\obj\Release\CRAFTLouisville.csprojResolveAssemblyReference.cache
+C:\Users\Tom\Documents\Visual Studio 2013\Projects\CRAFTLouisville\CRAFTLouisville\bin\CRAFTLouisville.dll.config
+C:\Users\Tom\Documents\Visual Studio 2013\Projects\CRAFTLouisville\CRAFTLouisville\bin\CRAFTLouisville.dll
+C:\Users\Tom\Documents\Visual Studio 2013\Projects\CRAFTLouisville\CRAFTLouisville\bin\CRAFTLouisville.pdb
+C:\Users\Tom\Documents\Visual Studio 2013\Projects\CRAFTLouisville\CRAFTLouisville\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Tom\Documents\Visual Studio 2013\Projects\CRAFTLouisville\CRAFTLouisville\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Tom\Documents\Visual Studio 2013\Projects\CRAFTLouisville\CRAFTLouisville\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Tom\Documents\Visual Studio 2013\Projects\CRAFTLouisville\CRAFTLouisville\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Tom\Documents\Visual Studio 2013\Projects\CRAFTLouisville\CRAFTLouisville\bin\Microsoft.AI.Web.dll
+C:\Users\Tom\Documents\Visual Studio 2013\Projects\CRAFTLouisville\CRAFTLouisville\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Tom\Documents\Visual Studio 2013\Projects\CRAFTLouisville\CRAFTLouisville\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Tom\Documents\Visual Studio 2013\Projects\CRAFTLouisville\CRAFTLouisville\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Tom\Documents\Visual Studio 2013\Projects\CRAFTLouisville\CRAFTLouisville\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Tom\Documents\Visual Studio 2013\Projects\CRAFTLouisville\CRAFTLouisville\bin\Microsoft.AI.Web.xml
+C:\Users\Tom\Documents\Visual Studio 2013\Projects\CRAFTLouisville\CRAFTLouisville\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Tom\Documents\Visual Studio 2013\Projects\CRAFTLouisville\CRAFTLouisville\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Tom\Documents\Visual Studio 2013\Projects\CRAFTLouisville\CRAFTLouisville\obj\Release\CRAFTLouisville.csprojResolveAssemblyReference.cache
+C:\Users\Tom\Documents\Visual Studio 2013\Projects\CRAFTLouisville\CRAFTLouisville\obj\Release\CRAFTLouisville.dll
+C:\Users\Tom\Documents\Visual Studio 2013\Projects\CRAFTLouisville\CRAFTLouisville\obj\Release\CRAFTLouisville.pdb
