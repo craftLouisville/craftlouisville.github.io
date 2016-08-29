@@ -62,10 +62,36 @@
         .yearTag {
             display: inline;
         }
+
+        .back-to-top {
+            z-index: 999;
+            background: none;
+            margin: 0;
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            width: 200px;
+            height: 70px;
+            z-index: 100;
+            /*display: none;*/
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #ff9000;
+        }
+
+        .buyTickets {
+        }
+
+        .buyAirCraft {
+        }
     </style>
+
+
 </head>
 <body id="page-top" class="index">
     <!-- Navigation -->
+    <!--<a href="#" class="btn btn-xl back-to-top buyTickets">Buy Tickets</a>-->
+    
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -116,13 +142,15 @@
         <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="205">
             <li class="active">
                 <!--<a class="btn btn-xl" href="https://itrulycare.com/events/craft-2015/" target="_blank">Make<br />a<br />Donation</a>-->
-                <form action="https://craft.yapsody.com/event/index/37846/craft-2016" method="post" target="_blank">
+                <form id="buynow" action="https://craft.yapsody.com/event/index/37846/craft-2016" method="post" target="_blank">
                     <input type="hidden" name="cmd" value="_s-xclick">
                     <input type="hidden" name="hosted_button_id" value="J99BMJYQBP5J8">
                     <input type="hidden" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
                     <!--<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">-->
-                    <input class="btn btn-xl" type="submit" value="Buy Tickets" />
+                    <input id ="btnBuyNow"class="btn btn-xl back-to-top" type="submit" value="Buy Tickets" />
                 </form>
+
+                
             </li>
         </ul>
     </nav>
@@ -216,10 +244,49 @@
                             ever had a confirmed positive sputum culture for Burkholderia cepacia (B. cepacia) complex should not attend events.
                         </p>
                     </div>
+
+                    <h2 class="section-heading" style="padding-top:25px;">New This Year: AirCRAFT</h2>
+                    <div style="width:90%; margin:0px auto 0px auto;text-align:center;">
+                        <div class="col-sm-12"><img src="img/airCraft.png" class="img-responsive" alt="" style="text-align:center;display:inline;padding:20px;" /></div>
+                        
+                        <h2>8 Person Private Jet for 2017</h2>
+                        <h4>(Spring Break Included)</h4>
+                        <div class="col-sm-6" style="float:none;margin:auto;">
+                            <ul style="text-align:left;width:100%;margin:0px auto 0px auto;padding-bottom:1em;font-size:1.2em;">
+                                <li>
+                                    The use of a private jet for 8 people to the
+                                    destination of your choice within the green circle
+                                    above (750-mile radius from Louisville).
+                                </li>
+                                <li>
+                                    Includes rental van for up to a week at the
+                                    destination of your choice.
+                                </li>
+                                <li>Tickets are $100 each and the FMV is $20,000.</li>
+                                <li>
+                                    Amazing raffle for spring break, sporting events,
+                                    annual vacation destinations, weddings and
+                                    more!
+                                </li>
+                            </ul>
+                        </div>
+                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                            <input type="hidden" name="cmd" value="_s-xclick">
+                            <input type="hidden" name="hosted_button_id" value="S2URJLP2JJNKA">
+                            <table style="display:none;">
+                                <tr><td><input type="hidden" name="on0" value="Ticket will be mailed to you.">Ticket will be mailed to you.</td></tr>
+                                <tr><td><input type="text" name="os0" maxlength="200"></td></tr>
+                            </table>
+                            <input style="display:none;" type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                            <img style="display:none;" alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                            <input id="btnBuyAir" class="btn btn-xl" type="submit" value="Buy AirCRAFT Ticket" />
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+    
     <section id="story" class="bg-light-gray">
         <div class="container">
             <div class="row">
@@ -1248,6 +1315,31 @@
     <script src="js/agency.js"></script>
     <script>
         $('.yearTag').html(new Date().getFullYear());
+    </script>
+    <script>
+        //var amountScrolled = 300;
+
+        //$(window).scroll(function () {
+        //    if ($(window).scrollTop() > amountScrolled) {
+        //        $('a.back-to-top').fadeIn('slow');
+        //    } else {
+        //        $('a.back-to-top').fadeOut('slow');
+        //    }
+        //});
+
+        $('.buyTickets').click(function(event) {
+            event.preventDefault();
+            //$('#buynow').submit();
+            $('btnBuyNow').click();
+        });
+
+        $('.buyAirCraft').click(function (event) {
+            event.preventDefault();
+            $("#buyair").submit(function (event) {
+                event.preventDefault();
+            });
+            return false;
+        });
     </script>
 </body>
 </html>
