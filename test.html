@@ -1,0 +1,1568 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>CRAFT Louisville</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/agency.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        /* Note: Try to remove the following lines to see the effect of CSS positioning */
+        .affix {
+            top: 200px;
+            word-wrap: normal;
+            left: 80%;
+        }
+
+        .nav-affixed {
+            display: inherit;
+            margin-top: 470px;
+            left: 81%;
+        }
+
+        @media(max-width:768px) {
+            .affix {
+                top: -200px;
+            }
+
+            .nav-affixed {
+                display: none;
+                top: -200px;
+            }
+
+            header {
+                margin: 50px auto 0px auto;
+            }
+        }
+
+        @media(min-width:1400px) {
+            .nav-affixed {
+                margin-top: 560px;
+            }
+        }
+
+        .yearTag {
+            display: inline;
+        }
+
+        .back-to-top {
+            z-index: 999;
+            background: none;
+            margin: 0;
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            width: 200px;
+            height: 70px;
+            z-index: 100;
+            /*display: none;*/
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #ff9000;
+        }
+
+        .buyTickets {
+        }
+
+        .buyAirCraft {
+        }
+    </style>
+
+</head>
+<body id="page-top" class="index">
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                appId: '360584827643910',
+                xfbml: true,
+                version: 'v2.8'
+            });
+            FB.AppEvents.logPageView();
+            OnFBInit();
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) { return; }
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <!-- Navigation -->
+    <!--<a href="#" class="btn btn-xl back-to-top buyTickets">Buy Tickets</a>-->
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">CRAFT Louisville</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#event">The Event</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#story">Our Story</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#drinks">Drinks &amp; Food</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#sponsors">The Sponsors</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#getinvolved">Get Involved</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#press">Press</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <!-- Header -->
+    <nav class="col-sm-2 nav-affixed">
+        <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="205">
+            <li class="active">
+                <form id="buynow" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                    <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="hosted_button_id" value="65B9JZ5Z7XMT8">
+                    <input type="hidden" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                    <input id="btnBuyNow" class="btn btn-xl back-to-top" type="submit" value="Donate" />
+                </form>
+                <!--<form id="buynow" action="https://craft.yapsody.com/event/index/37846/craft-2016" method="post" target="_blank">
+                    <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="hosted_button_id" value="J99BMJYQBP5J8">
+                    <input type="hidden" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                    <input id="btnBuyNow" class="btn btn-xl back-to-top" type="submit" value="Buy Tickets" />
+                </form>-->
+
+
+            </li>
+        </ul>
+    </nav>
+    <header>
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-lead-in">
+                </div>
+                <div class="intro-heading"></div>
+            </div>
+        </div>
+    </header>
+
+    <section id="upcomingEvents" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Upcoming Events</h2>
+                    <table class="table table-hover table-responsive table-bordered" id="eventTable" name="eventTable"></table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="event">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">The Event</h2>
+                    <div style="width:90%; margin:0px auto 0px auto;text-align:center;">
+                        <p style="text-align:left;width:90%;margin:0px auto 0px auto;padding-bottom:1em;">
+                            CRAFT is an experience designed to capture elements of what makes Louisville special and
+                            combine them into a single night. While CRAFT began as a small group of people looking to do their
+                            part to cure cystic fibrosis, it has grown into one of the premier parties in the entire city.
+                        </p>
+                        <p style="text-align:left;width:90%;margin:0px auto 0px auto;padding-bottom:1em;">
+                            Louisville is CRAFT. Craft venues, craft food, craft music, craft art, craft entertainment, craft beer
+                            and so much more have helped put our city on the map. Now all of these elements come together in
+                            a single night that celebrates the culture of a city and the fight for a cure.
+                        </p>
+                        <p style="text-align:left;width:90%;margin:0px auto 0px auto;padding-bottom:1em;">
+                            You're invited to join us for one of the best parties this town has ever seen. But it's not just any party.
+                            It's a party with a purpose! Together, we'll dine on pizza from many of the best craft pizza makers in
+                            the city, sip on craft beer from local breweries flowing from never-ending taps, dance the night away
+                            listening to some of the top local bands and raise money that will help end this awful disease.
+                        </p>
+                        <p style="text-align:left;width:90%;margin:0px auto 0px auto;padding-bottom:1em;">
+                            Together, we'll change the definition CF from that of a life-shortening, family-destroying, tomorrow-
+                            stealing disease into an acronym for CURE FOUND, all while partying the night away!
+                        </p>
+                        <p style="text-align:left;width:90%;margin:0px auto 0px auto;padding-bottom:1em;">
+                            Early-bird VIP Tickets $85 ($95 after September 24, 2016)<br />
+                            Early-bird Tickets $55 ($65 after September 24, 2016)<br />
+                            Tickets include admission, beer tastings and pizza samples<br /><br />
+                            VIP ticket: Includes early admission @ 6PM, (one hour prior to general admission), automatic entry into deluxe raffle, specialty pizzas unavailable to general admission, included specialty bourbon cocktail, and a souvenir CRAFT mason jar for beer samples.
+                        </p>
+                        <p style="text-align:left;width:90%;margin:0px auto 0px auto;padding-bottom:1em;">
+                            Craft is a 21+ event<br />
+                            Proceeds to benefit the Cystic Fibrosis Foundation
+                        </p>
+                        <p style="text-align:left;width:90%;margin:0px auto 0px auto;padding-bottom:1em;">
+                            Event Details<br />
+                            Date: Saturday, October 1, 2016<br />
+                            VIP Hour: 6:00 pm - 7:00 pm<br />
+                            Main Event: 7:00 pm - 10:00 pm<br />
+                            Location: <a target="_blank" href="https://www.google.com/maps/place/129+N+2nd+St,+Louisville,+KY+40202/@38.2567987,-85.7529395,17z/data=!3m1!4b1!4m2!3m1!1s0x886972bc69446de9:0x19e2d883a9786542">2nd Street Bridge Streetscape, S 2nd Street, Louisville, KY</a><br />
+                        </p>
+                        <p style="text-align:left;width:90%;margin:0px auto 0px auto;padding-bottom:1em;">
+                            <strong>Parking Information</strong><br />
+                            Aside from onstreet parking, there are several garages with great access to CRAFT.  Nearby options
+                            include the Witherspoon Garage (101 W Witherspoon St.), the Skywalk Garage (120 N Third St.)
+                            and the YUM Center Garage.  Other Parking options can be found <a href="https://louisvilleky.gov/government/parking-authority-parc/parc-street-garageslots">here</a>.
+                        </p>
+                        <p style="text-align:left;width:90%;margin:0px auto 0px auto;padding-bottom:1em;">
+                            <strong>About Cystic Fibrosis</strong><br />
+                            About cystic fibrosis: Cystic fibrosis (CF) is a life-shortening genetic disease that primarily affects the
+                            lungs and digestive system. An estimated 30,000 children and adults in the United States (70,000
+                            worldwide) have CF. Although cystic fibrosis requires daily care, people with the condition are able
+                            to attend school and work, and have a better quality of life than in previous decades. With the help of
+                            the Cystic Fibrosis Foundation, and donors like you, people with CF are able now live into their 20s
+                            and 30s, and some are living into their 40s and 50s.
+                        </p>
+                        <p style="text-align:center;width:90%;margin:0px auto 0px auto;padding-bottom:1em;">
+                            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                                <input type="hidden" name="cmd" value="_s-xclick">
+                                <input type="hidden" name="hosted_button_id" value="65B9JZ5Z7XMT8">
+                                <input type="hidden" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                                <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                                <input class="btn btn-xl back-to-top" type="submit" value="Donate" />
+                            </form>
+                            <!--<form action="https://craft.yapsody.com/event/index/37846/craft-2016" method="post" target="_blank">
+                                <input type="hidden" name="cmd" value="_s-xclick">
+                                <input type="hidden" name="hosted_button_id" value="J99BMJYQBP5J8">
+                                <input type="hidden" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                                <input class="btn btn-xl" type="submit" value="Buy Tickets" />
+                            </form>-->
+                        </p>
+                        <p style="text-align:left;width:90%;margin:0px auto 0px auto;padding-bottom:1em;">
+                            <strong>Important Note on Attendance at CURE CF, Inc Events:</strong> To reduce the risk of getting and spreading germs at CURE CF, Inc-sponsored events,
+                            we ask that everyone follow basic best practices by regularly cleaning your hands with soap and water or with an alcohol-based hand gel, covering your
+                            cough or sneeze with a tissue or your inner elbow and maintaining a safe 6-foot distance from anyone with a cold or infection.
+                        </p>
+                        <p style="text-align:left;width:90%;margin:0px auto 0px auto;padding-bottom:1em;">
+                            Medical evidence shows that germs may spread among people with CF through direct and indirect contact as well as through droplets that travel short distances
+                            when a person coughs or sneezes. These germs can lead to worsening symptoms and speed decline in lung function. To further help reduce the risk of cross-infection,
+                            the CURE CF Inc's attendance policy recommends inviting only one person with CF to attend any indoor portion of a Foundation-sponsored event at a specific time.
+                            For any outdoor portion, the Foundation recommends that all people with CF maintain a safe 6-foot distance from each other at all times. Also, individuals who have
+                            ever had a confirmed positive sputum culture for Burkholderia cepacia (B. cepacia) complex should not attend events.
+                        </p>
+                    </div>
+
+                    <h2 class="section-heading" style="padding-top:25px;">New This Year: AirCRAFT</h2>
+                    <div style="width:90%; margin:0px auto 0px auto;text-align:center;">
+                        <div class="col-sm-12"><img src="img/airCraft.png" class="img-responsive" alt="" style="text-align:center;display:inline;padding:20px;" /></div>
+
+                        <h2>8 Person Private Jet for 2017</h2>
+                        <h4>(Spring Break Included)</h4>
+                        <div class="col-sm-6" style="float:none;margin:auto;">
+                            <ul style="text-align:left;width:100%;margin:0px auto 0px auto;padding-bottom:1em;font-size:1.2em;">
+                                <li>
+                                    The use of a private jet for 8 people to the
+                                    destination of your choice within the green circle
+                                    above (750-mile radius from Louisville).
+                                </li>
+                                <li>
+                                    Includes rental van for up to a week at the
+                                    destination of your choice.
+                                </li>
+                                <li>Tickets are $100 each and the FMV is $20,000.</li>
+                                <li>
+                                    Amazing raffle for spring break, sporting events,
+                                    annual vacation destinations, weddings and
+                                    more!
+                                </li>
+                            </ul>
+                        </div>
+                        <!--<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                            <input type="hidden" name="cmd" value="_s-xclick">
+                            <input type="hidden" name="hosted_button_id" value="C9YK7VKR924A4">
+                            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+
+                        </form>
+                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                            <input type="hidden" name="cmd" value="_s-xclick">
+                            <input type="hidden" name="hosted_button_id" value="C9YK7VKR924A4">
+                            <table style="display:none;">
+                                <tr><td><input type="hidden" name="on0" value="Ticket will be mailed to you.">Ticket will be mailed to you.</td></tr>
+                                <tr><td><input type="text" name="os0" maxlength="200"></td></tr>
+                            </table>
+                            <input style="display:none;" type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                            <img style="display:none;" alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                            <input id="btnBuyAir" class="btn btn-xl" type="submit" value="Buy AirCRAFT Ticket" />
+                        </form>-->
+                        <h3>SOLD OUT!</h3>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="story" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Our Story</h2>
+                    <div style="width:90%; margin:0px auto 0px auto;text-align:center;">
+                        <p style="text-align:left;width:90%;margin:0px auto 0px auto;padding-bottom:1em;">
+                            In early 2015, a small group of parents who didn’t know each other particularly well, decided to meet
+                            over a cold beer at a local brewery in Louisville, KY.  The one thing we had in common... kids
+                            battling cystic fibrosis.  That night the Klausings (Luke ­ 8 years old at the time), the Foushees (Alex ­ 2 years
+                            old at the time) and the Sweeneys (Samuel ­ 8 months old at the time) decided to work tirelessly to rally their city to join the
+                            fight to save their kids and beat CF once and for all.
+                        </p>
+                        <p style="text-align:left;width:90%;margin:0px auto 0px auto;padding-bottom:1em;">
+                            And CRAFT was born...
+                        </p>
+                        <p style="text-align:left;width:90%;margin:0px auto 0px auto;padding-bottom:1em;">
+                            We knew that in order to tap into the heart of this city, we had to design an event that embodied the
+                            very best of what Louisville has to offer.  It didn’t take us long to realize that all of the pieces to make
+                            a great event already existed right here: the pizza, the beer, the people and a whole lot of asks.
+                        </p>
+                        <p style="text-align:left;width:90%;margin:0px auto 0px auto;padding-bottom:1em;">
+                            What started as a small group of dedicated parents has grown into a small army of friends, family,
+                            businesses and even local government.  Together, for one night each year, we’re going to bring it all
+                            together to throw the best party this town has ever seen, raise some serious dollars to battle CF and
+                            celebrate another year of Louisville’s drive towards a cure.
+                        </p>
+                        <p style="text-align:left;width:90%;margin:0px auto 0px auto;padding-bottom:1em;">
+                            Together, we’ll see the day that CF stands for Cure Found!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="portfolio-item">
+                        <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                            <div class="team-member">
+                                <img src="img/team/IMG_0719.jpg" class="img-responsive img-circle" alt="">
+                                <h4 class="service-heading">Read Samuel's Story</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="portfolio-item">
+                        <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                            <div class="team-member">
+                                <img src="img/team/Luke Champion.jpg" class="img-responsive img-circle" alt="">
+                                <h4 class="service-heading">Read Luke's Story</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="portfolio-item">
+                        <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                            <div class="team-member">
+                                <img src="img/team/IMG_3221.JPG" class="img-responsive img-circle" alt="">
+                                <h4 class="service-heading">Read Alex's Story</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="row text-center" style="padding-bottom:2em;">
+                        <a target="_blank" href="https://www.cff.org/What-is-CF/About-Cystic-Fibrosis/?gclid=Cj0KEQjwm4mwBRCni-ivmePYivkBEiQAdGkkluKS_84YuCJ_zuvFRA7IgPyreCAuWfmEand9YGM3xNMaAkF78P8HAQ">Learn More about Cystic Fibrosis</a>
+                    </div>
+                    <div>
+                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                            <input type="hidden" name="cmd" value="_s-xclick">
+                            <input type="hidden" name="hosted_button_id" value="65B9JZ5Z7XMT8">
+                            <input type="hidden" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                            <input class="btn btn-xl back-to-top" type="submit" value="Donate" />
+                        </form>
+
+                        <!--<form action="https://craft.yapsody.com/event/index/37846/craft-2016" method="post" target="_blank">
+                            <input type="hidden" name="cmd" value="_s-xclick">
+                            <input type="hidden" name="hosted_button_id" value="J99BMJYQBP5J8">
+                            <input type="hidden" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                            <!--<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                            <input class="btn btn-xl" type="submit" value="Buy Tickets" />
+                        </form>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="drinks">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">The Drinks</h2>
+                    <h3 class="section-subheading text-muted">Here’s what's on tap at CRAFT <div class="yearTag"></div>:</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/beer/against_the_grain_brewery_logo.jpg" class="img-responsive" alt="">
+                        <h4 class="service-heading">Against the Grain Brewery</h4>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/beer/BBC-logo.png" class="img-responsive" alt="">
+                        <h4 class="service-heading">Bluegrass Brewing Company</h4>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/beer/Blue%20Stallion%20Logo.png" class="img-responsive" alt="">
+                        <h4 class="service-heading">Blue Stallion</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/beer/Ei8ht Ball Brewing.png" class="img-responsive" alt="">
+                        <h4 class="service-heading">Ei8ht Ball Brewing</h4>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/beer/Falls-City-Beer.jpg" class="img-responsive" alt="">
+                        <h4 class="service-heading">Falls City Beer</h4>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/beer/Screen Shot 2015-09-23 at 2.30.31 PM.png" class="img-responsive" alt="">
+                        <h4 class="service-heading">Flat 12 Bierwerks</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/beer/Goodwood .jpg" class="img-responsive" alt="">
+                        <h4 class="service-heading">Goodwood</h4>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/beer/Gordon Biersch.jpeg" class="img-responsive" alt="">
+                        <h4 class="service-heading">Gordon Biersch</h4>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/beer/great-flood-logo.jpg" class="img-responsive" alt="">
+                        <h4 class="service-heading">Great Flood</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/beer/Monnik.png" class="img-responsive" alt="">
+                        <h4 class="service-heading">Monnik</h4>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/beer/Old Louisville Brewery.png" class="img-responsive" alt="">
+                        <h4 class="service-heading">Old Louisville Brewery</h4>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/beer/Rhinegeist.png" class="img-responsive" alt="">
+                        <h4 class="service-heading">Rhinegeist</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/beer/Horseshoe.jpg" class="img-responsive" alt="">
+                        <h4 class="service-heading">Horseshoe Bend</h4>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/beer/Sterling.png" class="img-responsive" alt="">
+                        <h4 class="service-heading">Sterling</h4>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/beer/West-Sixth-Brewing.png" class="img-responsive" alt="">
+                        <h4 class="service-heading">West Sixth Brewing</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col-sm-4">
+                    <div class="team-member">
+
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/beer/White Squirrel Brewing.jpg" class="img-responsive" alt="">
+                        <h4 class="service-heading">White Squirrel Brewing</h4>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+
+                    </div>
+                </div>
+                <!--<div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/beer/Forest Edge Wine.png" class="img-responsive" alt="">
+                        <h4 class="service-heading">Forest Edge Wine</h4>
+                    </div>-->
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/beer/JDSB_Collection.jpg" class="img-responsive" alt="">
+                        <h4 class="service-heading">Jack Daniel's Single Barrel</h4>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/beer/Old_Forester_Logo.png" class="img-responsive" alt="">
+                        <h4 class="service-heading">Old Forester</h4>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/beer/WR_Masterbrand.jpg" class="img-responsive" alt="">
+                        <h4 class="service-heading">Woodford Reserve</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="food">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">The Food</h2>
+                    <h3 class="section-subheading text-muted">Here’s what's in the oven at CRAFT <div class="yearTag"></div>:</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/food/angio-s-italian-restaurant.jpg" class="img-responsive" alt="">
+                        <h4 class="service-heading">Angio's</h4>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/food/BBC-logo copy.png" class="img-responsive" alt="">
+                        <h4 class="service-heading">Bluegrass Brewing Company</h4>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/food/bearnos-logo.png" class="img-responsive" alt="">
+                        <h4 class="service-heading">Bearno's</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/food/boombozz-taphouse-logo.png" class="img-responsive" alt="">
+                        <h4 class="service-heading">Boombozz Taphouse</h4>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/food/Diorios.jpg" class="img-responsive" alt="">
+                        <h4 class="service-heading">Diorios</h4>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/food/Gordon Biersch copy.jpeg" class="img-responsive" alt="">
+                        <h4 class="service-heading">Gordon Biersch</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/food/HometownPizzalogo.png" class="img-responsive" alt="">
+                        <h4 class="service-heading">Hometown Pizza</h4>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/food/Impellizeri.jpg" class="img-responsive" alt="">
+                        <h4 class="service-heading">Impellizeri's</h4>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/food/Johnny-Bruscos-nc.jpg" class="img-responsive" alt="">
+                        <h4 class="service-heading">Johnny Brusco's</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/food/logo-johnny-vs.gif" class="img-responsive" alt="">
+                        <h4 class="service-heading">Johnny V's</h4>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/food/MellowMushroomlogo.jpg" class="img-responsive" alt="">
+                        <h4 class="service-heading">Mellow Mushroom</h4>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/food/Loui_Loui.png" class="img-responsive" alt="">
+                        <h4 class="service-heading">Loui Loui's</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/food/Spinellislogo2_3.jpg" class="img-responsive" alt="">
+                        <h4 class="service-heading">Spinelli's</h4>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/food/North End Cafe.jpg" class="img-responsive" alt="">
+                        <h4 class="service-heading">North End Cafe</h4>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/food/Jets Pizza.jpg" class="img-responsive" alt="">
+                        <h4 class="service-heading">Jet's Pizza</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <!--<div class="team-member">
+                        <img src="img/food/Spinellislogo2_3.jpg" class="img-responsive" alt="">
+                        <h4 class="service-heading">Spinelli's</h4>
+                    </div>-->
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/food/Dunns Donuts.jpg" class="img-responsive" alt="">
+                        <h4 class="service-heading">Dunn's Donuts</h4>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <!--<div class="team-member">
+                        <img src="img/food/Jets Pizza.jpg" class="img-responsive" alt="">
+                        <h4 class="service-heading">Jet's Pizza</h4>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sponsors">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">The Sponsors</h2>
+                </div>
+            </div>
+            <div class="row" style="text-align:center;">
+                <div class="col-sm-6">
+                    <div>
+                        <a href="https://www.anthem.com/" target="_blank">
+                            <img src="img/sponsors/AnthemLogo.jpg" class="img-responsive" alt="" style="padding-top:25px;width:75%;margin:0px auto 0px auto;">
+                        </a>
+                        <h2>Presenting Sponsor</h2>
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div>
+                        <a href="https://www.brown-forman.com/" target="_blank">
+                            <img src="img/sponsors/BrownFormanLogo.jpg" class="img-responsive" alt="" style="padding-top:25px;width:75%;margin:0px auto 0px auto;">
+                        </a>
+                        <h2>Presenting Sponsor</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="text-align:center;">
+                &nbsp;<br />&nbsp;<br />&nbsp;<br />&nbsp;<br />
+            </div>
+            <div class="row" style="text-align:center;">
+                <div class="col-sm-12">
+                    <div>
+                        <a href="https://www.kosair.org/" target="_blank"><img src="img/sponsors/kosair.png" class="img-responsive" alt="" style="padding-top:25px;width:25%;margin:0px auto 0px auto;"></a>
+                        <h2>VIP Presenter</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="text-align:center;">
+                &nbsp;<br />&nbsp;<br />&nbsp;<br />&nbsp;<br />
+            </div>
+            <div class="row" style="text-align:center;">
+                <div class="col-sm-4">
+                    <div>
+                        <a href="https://www.facebook.com/dirtyuncleband/" target="_blank"><img src="img/sponsors/DirtyUncleBandLogo.jpg" class="img-responsive" alt="" style="padding-top:25px;width:50%;margin:0px auto 0px auto;"></a>
+                        <h3>Lager Sponsor</h3>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div>
+                        <a href="https://www.lge-ku.com/" target="_blank">
+                            <img src="img/sponsors/LGELogo.png" class="img-responsive" alt="" style="padding-top:25px;width:50%;margin:0px auto 0px auto;">
+                        </a>
+                        <h3>Lager Sponsor</h3>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div>
+                        <a href="http://obtlaw.com/" target="_blank">
+                            <img src="img/sponsors/OBTLogo.PNG" class="img-responsive" alt="" style="padding-top:25px;width:50%;margin:0px auto 0px auto;">
+                        </a>
+                        <h3>Lager Sponsor</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="text-align:center;">
+                &nbsp;<br />&nbsp;<br />&nbsp;<br />&nbsp;<br />
+            </div>
+            <div class="row" style="margin-top:50px;">
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <a href="https://www.republicbank.com/home/personal" target="_blank" style="text-decoration:none;">
+                            <img src="img/sponsors/RepublicBankLogo.png" class="img-responsive" alt="">
+                        </a>
+                        <h4 class="service-heading">
+                            Ale Sponsor
+                        </h4>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <a href="http://www.ramagecompany.com/" target="_blank"><img src="img/sponsors/TheRamageCompanyLogo.jpg" class="img-responsive" alt=""></a>
+                        <h4 class="service-heading">
+                            Ale Sponsor
+                        </h4>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <a href="http://www.abbvie.com/" target="_blank">
+                            <img src="img/sponsors/abbvieLogo.png" class="img-responsive" alt="">
+                        </a>
+                        <h4 class="service-heading">
+                            Ale Sponsor
+                        </h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin-top:50px;">
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <a href="http://www.argifinancialgroup.com/" target="_blank" style="text-decoration:none;">
+                            <img src="img/sponsors/ARGI.png" class="img-responsive" alt="">
+                        </a>
+                        <h4 class="service-heading">
+                            Ale Sponsor
+                        </h4>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <a href="http://www.ciscom.com/" target="_blank">
+                            <img src="img/sponsors/2-CisCom-logo.jpg" class="img-responsive" alt="">
+                        </a>
+                        <h4 class="service-heading">
+                            Ale Sponsor
+                        </h4>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <a href="http://www.aarnoldmovingcompany.com/" target="_blank">
+                            <img src="img/sponsors/Arnold_logo.png" class="img-responsive" alt="">
+                        </a>
+                        <h4 class="service-heading">
+                            Ale Sponsor
+                        </h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12" style="text-align:center;">
+                    <h3>Pilsner Sponsors</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <a href="http://www.epicinsurancesolutions.com/" target="_blank">
+                            <img src="img/sponsors/Epic_Insurance.jpg" class="img-responsive" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <a href="http://www.familyallergy.com/" target="_blank">
+                            <img src="img/sponsors/Family_Allergy.png" class="img-responsive" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <a href="http://www.hill-rom.com/usa/" target="_blank">
+                            <img src="img/sponsors/hill-rom-logo.png" class="img-responsive" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <a href="http://www.teg123.com/" target="_blank">
+                            <img src="img/sponsors/TEG_Architects.jpg" class="img-responsive" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <a href="http://deandorton.com/" target="_blank">
+                            <img src="img/sponsors/DeanLogo_clr_wbox.png" class="img-responsive" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <a href="http://cssattorneys.com/" target="_blank">
+                            <img src="img/sponsors/ConliffeSandmanSullivan.png" class="img-responsive" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <a href="https://www.donationplanet.org/charity/porcini-childrens-foundation-inc/" target="_blank">
+                            <img src="img/sponsors/PorciniFarmerFoundation.jpg" class="img-responsive" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <a href="http://firstky.com/" target="_blank">
+                            <img src="img/sponsors/firstky.PNG" class="img-responsive" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <a href="http://kentuckyfertility.com/" target="_blank">
+                            <img src="img/sponsors/kentuckyfertilityinstitute_logo.jpeg" class="img-responsive" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <a href="https://www.glowtouch.com/" target="_blank">
+                            <img src="img/sponsors/glowtouch.png" class="img-responsive" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <a href="http://www.garrett-stotz.com/" target="_blank">
+                            <img src="img/sponsors/garrett.png" class="img-responsive" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <a href="https://www.cincinnatifertility.com/" target="_blank">
+                            <img src="img/sponsors/IRHLogo.png" class="img-responsive" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="text-align:center;">
+                <em>In Loving Memory of Charlie "Papaw" Steier</em>
+            </div>
+        </div>
+    </section>
+    <section id="getinvolved" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Get Involved</h2>
+                    <div style="width:90%; margin:0px auto 0px auto;text-align:center;">
+                        <p style="text-align:left;width:90%;margin:0px auto 0px auto;padding-bottom:1em;">
+                            It would be impossible to pull such an awesome event off without the help and generosity of people
+                            like you.  There are lots of ways to get involved with this year’s event.  Whether as a sponsor, a food
+                            or beverage contributor, donating items for our auctions or as a volunteer, we’re incredibly thankful
+                            to have you onboard!
+                        </p>
+                        <p style="text-align:left;width:90%;margin:0px auto 0px auto;padding-bottom:2em;">
+                            The easiest way to get in touch with us is through the “Contact Us” form or by emailing us at
+                            <a href="mailto:craftlouisville@gmail.com">craftlouisville@gmail.com</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="team-member">
+                        <h4 class="service-heading">
+                            <a href="docs/CRAFT Sponsorship Levels.pdf" target="_blank">Download Sponsorship Information</a>
+                        </h4>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="team-member">
+                        <h4 class="service-heading"><a href="http://www.signupgenius.com/go/4090a49aea82da31-craft" target="_blank">Volunteer Information</a></h4>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="team-member">
+                        <h4 class="service-heading"><a href="docs/CRAFT brewery participation form.doc">Download Brewery Participation Information</a></h4>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="team-member">
+                        <h4 class="service-heading"><a href="docs/Louisville CRAFT Restaurant Participation Form (2).doc">Download Restuarant Participation Information</a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div>
+                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                            <input type="hidden" name="cmd" value="_s-xclick">
+                            <input type="hidden" name="hosted_button_id" value="65B9JZ5Z7XMT8">
+                            <input type="hidden" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                            <input class="btn btn-xl back-to-top" type="submit" value="Donate" />
+                        </form>
+                        <!--<form action="https://craft.yapsody.com/event/index/37846/craft-2016" method="post" target="_blank">
+                            <input type="hidden" name="cmd" value="_s-xclick">
+                            <input type="hidden" name="hosted_button_id" value="J99BMJYQBP5J8">
+                            <input type="hidden" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                            <input class="btn btn-xl" type="submit" value="Buy Tickets" style="z-index:5000;" />
+                        </form>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="press">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Press</h2>
+                    <div style="width:90%; margin:0px auto 0px auto;text-align:center;">
+                        <p style="text-align:left;width:90%;margin:0px auto 0px auto;padding-bottom:1em;">
+                            <a href="http://www.wlky.com/news/craft-2015-bringing-together-pizza-beer-and-the-fight-against-cystic-fibrosis/35635834" target="_blank">CRAFT 2015: Bringing together pizza, beer and the fight against Cystic Fibrosis - WLKY</a>
+                        </p>
+                        <p style="text-align:left;width:90%;margin:0px auto 0px auto;padding-bottom:1em;">
+                            <a href="http://www.wdrb.com/story/30213547/beer-and-pizza-come-together-to-fight-cf-with-craft-2015-on-oct-10" target="_blank">Beer and pizza come together to fight CF with CRAFT 2015 - WDRB</a>
+                        </p>
+                        <p style="text-align:left;width:90%;margin:0px auto 0px auto;padding-bottom:1em;">
+                            <a href="http://insiderlouisville.com/lifestyle_culture/craft-louisville-festival-brings-beer-pizza-together-quality-cause-oct-10/" target="_blank">CRAFT Louisville festival brings beer and pizza together for a good cause - Insider Louisville</a>
+                        </p>
+                        <p style="text-align:left;width:90%;margin:0px auto 0px auto;padding-bottom:1em;">
+                            Media/PR Contact: ­ Deryl Sweeney - <a href="mailto:deryl.sweeney@gmail.com">Email</a>
+                        </p>
+                        <!--<p style="text-align:left;width:90%;margin:0px auto 0px auto;padding-bottom:1em;">
+                            LINKS COMING SOON
+                        </p>-->
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div>
+                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                            <input type="hidden" name="cmd" value="_s-xclick">
+                            <input type="hidden" name="hosted_button_id" value="65B9JZ5Z7XMT8">
+                            <input type="hidden" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                            <input class="btn btn-xl back-to-top" type="submit" value="Donate" />
+                        </form>
+                        <!--<form action="https://craft.yapsody.com/event/index/37846/craft-2016" method="post" target="_blank">
+                            <input type="hidden" name="cmd" value="_s-xclick">
+                            <input type="hidden" name="hosted_button_id" value="J99BMJYQBP5J8">
+                            <input type="hidden" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+
+                            <input class="btn btn-xl" type="submit" value="Buy Tickets" />
+                        </form>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Contact Us</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <form name="sentMessage" id="contactForm" novalidate>
+                        <div class="row">
+                            <div style="border: 0px solid #eee; overflow: hidden; margin: 0px auto; max-width: 575px;">
+                                <iframe scrolling="no" src="https://docs.google.com/forms/d/e/1FAIpQLSfyQ4f_128psmMVO6o78Pi1aAgayxtltQn6sjW1F_ifyLZ1rA/viewform?embedded=true" style="border: 0px none; margin-left: -36px; height: 720px; margin-top: -200px; width: 650px;"></iframe>
+                            </div>
+                            <!--<div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" class="form-control" placeholder="Your Phone *" id="phone" required data-validation-required-message="Please enter your phone number.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <textarea class="form-control" placeholder="Your Message *" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="col-lg-12 text-center">
+                                <div id="success"></div>
+                                <button type="submit" class="btn btn-xl">Send Message</button>
+                            </div>-->
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="specialThanks" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Special Thanks</h2>
+                </div>
+            </div>
+            <div class="row" style="text-align:center;">
+                <div class="col-sm-3">
+                    <div>
+                        <a href="http://johnflowerproductions.com/" target="_blank">
+                            <img src="img/sponsors/John_Flower_Productions_Logo.png" class="img-responsive" alt="" style="padding-top:25px;width:75%;margin:0px auto 0px auto;">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div>
+                        <a href="http://summitmediacorp.com/kentucky.php" target="_blank">
+                            <img src="img/sponsors/Summit-plus-stations.png" class="img-responsive" alt="" style="padding-top:25px;width:75%;margin:0px auto 0px auto;">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div>
+                        <a href="http://vividimpact.com/" target="_blank">
+                            <img src="img/sponsors/Vivid_Impact_logo.png" class="img-responsive" alt="" style="padding-top:25px;width:75%;margin:0px auto 0px auto;">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div>
+                        <a href="http://www.katalyst-creativeconsulting.com/" target="_blank">
+                            <img src="img/sponsors/k@.png" class="img-responsive" alt="" style="padding-top:25px;width:75%;margin:0px auto 0px auto;">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="text-align:center;">
+                <div class="col-sm-3">
+                    <div>
+
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div>
+                        <a href="http://www.commonwealthtechnology.com/" target="_blank">
+                            <img src="img/sponsors/CommonwealthTech_logo.png" class="img-responsive" alt="" style="padding-top:25px;width:75%; max-width:200px; margin:0px auto 0px auto;">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div>
+                        <a href="http://www.onesourcediscovery.com/" target="_blank">
+                            <img src="img/sponsors/osd_logo.jpg" class="img-responsive" alt="" style="padding-top:25px;width:75%; max-width:200px; margin:0px auto 0px auto;">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; CRAFT Louisville <div class="yearTag"></div></span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        <li>
+                            <a target="_blank" href="https://www.facebook.com/events/485222601643884/"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.twitter.com/CRAFTLouisville/"><i class="fa fa-twitter"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Portfolio Modals -->
+    <!-- Use the modals below to showcase details about your portfolio projects! -->
+    <!-- Portfolio Modal 1 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Luke's Story</h2>
+                            <img class="img-responsive img-centered" src="img/team/Luke Champion.jpg" alt="">
+                            <p>
+                                Watching 8 year old Luke on the playground or at football practice, you would never guess he was battling a chronic illness. Luke was diagnosed shortly after birth with cystic fibrosis, a genetic disorder that primarily affects his lungs, but also his intestines, pancreas and liver. Luke knows maintenance is the key to keep him healthy, so he doesn't complain about the eight breathing treatments, hour-long lung percussions or 30 medications he has to take daily. His community really rallied to help him feel like a normal kid. After school, you'll find Luke surrounded by his neighbors and playing video games while he completes his breathing treatment. Since Luke's diagnosis, his family members have become passionate advocates of cystic fibrosis research and treatment options. They often speak at events and participate in hospital fundraisers, encouraging donations that will give Luke the best chance at a long and healthy life.
+                            </p><p>
+                                Luke is a huge fan of the Kentucky Wildcats and Green Bay Packers.
+                            </p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Return to CRAFT Site</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal 2 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Samuel's Story</h2>
+                            <img class="img-responsive img-centered" src="img/team/IMG_0719.jpg" alt="">
+                            <p>
+                                Samuel's life can be characterized by one word so far. Surprise!
+                            </p>
+                            <p>
+                                After 2 failed attempts at IVF and countless tears and prayers, we had
+
+                                3 frozen embryos left to use to try and get pregnant. These embryos were
+
+                                not ideal from the beginning, and given our previous failed attempts with
+
+                                better looking embryos, we had no hope of getting pregnant. In fact we had
+
+                                an appointment already set up across the country to see a specialist and
+
+                                try to start over. But March 21, 2014 we finally heard the words we had
+
+                                been waiting over a year to hear "Congratulations, you are pregnant!" And
+
+                                so was the start of our miracle baby.
+                            </p>
+                            <p>
+                                Pre-natal screening identified that mom was a CF carrier but follow up
+
+                                testing on Dad for the 30 most common mutations revealed he was not a
+
+                                carrier. We had an uneventful, wonderful pregnancy and after a very long
+
+                                few days of labor and delivery, Samuel was born on December 1, 2014 at
+
+                                3:38 in the morning. He was perfect, weighing in at the generous size of 9
+
+                                lb 2 oz and went home from the hospital 2 days later.
+
+                                One week after being home, while we were busy trying to figure out how to
+
+                                be a mom and a dad we got a call saying that Samuel's newborn screen
+
+                                came up positive and he may have cystic fibrosis. He had a follow up
+
+                                sweat test and then on December 19th around 4 pm we got THE
+
+                                CALL.
+                            </p>
+                            <p>
+                                THE CALL no parent wants to get. The CALL that tells you there is
+
+                                something wrong with your baby, The CALL that says your baby is hurt,
+
+                                The CALL that every parent dreads, The CALL that stops the whole world
+
+                                and takes your breath away at the same time. We were brokenhearted, in
+
+                                disbelief and we couldn't believe that God would do this to our baby. Mom
+
+                                clutched her newborn to her chest and fell to the ground on the kitchen
+
+                                floor screaming out and asking God why? This was the second Surprise
+
+                                that little Samuel would bring to our lives.  This was the call that told us our
+
+                                perfect baby had a deadly disease.
+                            </p>
+                            <p>
+                                So there we were, going through the motions of daily life with a newborn
+
+                                trying to wrap our heads around the fact that our perfect baby had a deadly
+
+                                disease. We researched, started medications, found doctors and sought
+
+                                out specialists. We learned how to do chest physical therapy, found
+
+                                researchers willing to work with us and made new friends. We were angry
+
+                                at God, yelled at God and thanked God all at the same time. And
+
+                                somehow here we are, 9 months later, with a perfectly healthy baby boy.
+
+                                He has grown well and has had no issues so far. We hope that with our
+
+                                continued efforts, he will remain healthy.
+
+                            </p>
+                            <p>
+                                Our family has jumped in with both feet, and our extended family and
+
+                                friends have jumped in with us. Team Samuel Strong has raised over
+
+                                $20,000 this year to find a cure for Samuel and everyone else affected by
+
+                                this disease. And, out of a labor of love, 3 families affected by this disease
+
+                                created CRAFT. What will be known as one of the premier events in
+
+                                Louisville year after year started from a few parents that just hope to see
+
+                                their children live long, healthy, happy lives.
+                            </p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Return to CRAFT Site</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal 3 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Alex's Story</h2>
+                            <img class="img-responsive img-centered" src="img/team/IMG_3221.jpg" alt="">
+                            <p>
+                                One glance at Alex and you will see that she is a typical 2 ½ year old. She is energetic, happy, curious, and loving. She
+
+                                loves to dance (to Taylor Swift), color, learn new things, and swim in the pool. She thinks bugs are gross, burps are
+
+                                funny, and she doesn’t like her hair brushed – at all. She amazes us every single day with a new word or knowledge bit.
+
+                                And she tries our patience with the usual toddler outbursts and attitudes.
+                            </p><p>
+                                If you watch long enough, though, you may see another side to this little girl. She is patient (most of the time), cautious
+
+                                (usually), and incredibly brave (always). She sits through hours of therapy and breathing treatments each day. She takes
+
+                                more medications than most adults (and has done so since she was just a few weeks old). Before meals and snacks, she
+
+                                takes enzymes that help her body absorb nutrients from the food she eats; she takes special vitamins and other
+
+                                medications as well. In the past year, Alex has spent around 8.9 days’ worth of time inhaling nebulized treatments to
+
+                                help her breathe, endured close to 15 days’ worth of time doing vest therapy to keep her lungs clear, and taken almost
+
+                                2,200 pancreatic enzymes to absorb nutrients from her meals. We work very hard (and diligently), and we are aggressive
+
+                                with treatment to ensure that Alex stays as healthy as possible.
+                            </p><p>
+                                Alexandra Elaine was born in April 2013. It was a very easy pregnancy and an even easier birth. We stayed in the hospital
+
+                                for a few days before being sent home as a new family of three. We were equally excited and scared – newborns can be
+
+                                very intimidating to new parents! But Alex was a perfect baby – she loved to be held (but not swaddled!), slept, ate, and
+
+                                rarely cried. At five days old, when we had our first visit to the pediatrician’s office for the usual well-baby checkup, we
+
+                                were told that Alex was not back up to her birth weight. Slightly concerned, we were told to come back in another week
+
+                                and not to worry. “This isn’t unusual,” they said. We returned the following week, expecting some weight gain.
+
+                                However, despite feeding every two hours around the clock, Alex was diagnosed with ‘Failure to Thrive,’ as she still had
+
+                                yet to get back up to her birth weight after nearly two weeks. The pediatrician had noted that she had some abnormal
+
+                                findings with her newborn screening; the follow-up genetic testing later would confirm the diagnosis of Cystic Fibrosis
+
+                                (CF).
+                            </p><p>
+                                We were crushed and confused – it came completely out of the blue. Neither side knew of any family history of this
+
+                                disease. It was easily the most difficult day/week/month/year of our lives. Having a newborn is hard enough, but getting
+
+                                that kind of diagnosis on top of it – well, it was definitely hard.
+
+                                That same week, we took Alex to her first (of many) CF Clinic appointments where we met an amazing team of doctors,
+
+                                nurses, respiratory therapists, social workers, and dieticians. We were able to start medications that same day and saw
+
+                                an immediate improvement in weight gain – those medications saved her life. Within a week, Alex had gained more than
+
+                                a few pounds. It was truly remarkable. Alex’s weight issue is caused by the inability of her body to release enzymes that
+
+                                aid in the breakdown and absorption of the food she eats. It was such a great relief to see our baby girl beginning to
+
+                                thrive!
+                            </p><p>
+                                We reached out to the Cystic Fibrosis Foundation (CFF) shortly after Alex’s diagnosis. We wanted to do something; but,
+
+                                because there is currently no cure for this disease, we felt helpless. We began doing the only thing that we could think of
+
+                                – raising money for the CF Foundation to aid in a fight for a medical breakthrough! Because Cystic Fibrosis is considered
+
+                                an Orphan Disease, it does not get the attention of big pharmaceutical companies. Nobody is competing for the “Next
+
+                                Big CF Drug” like they are for other, more prominent diseases (like heart disease or breast cancer). There is no major
+
+                                incentive for companies to invest in CF research. Without the CFF and its aggressive efforts in eradicating Cystic Fibrosis,
+
+                                we would not be able to enjoy our daughter like we do today. In the last two years, our family and friends alone have
+
+                                raised over $63,000 for the CF Foundation. But this is not enough… In an effort to make an even bigger impact and
+
+                                ensure that our daughter will have a bright and healthy future ahead, we decided to join forces with other families
+
+                                fighting the same battle. When a group of CF parents get together – mighty things happen – and events like CRAFT are
+
+                                born.
+                            </p><p>
+                                Alexandra means “Protector of Mankind” in Greek. Before Alex was born, we decided that we wanted a strong name for
+
+                                our daughter – we just didn’t realize how strong she would be. Alexandra Elaine will definitely make miracles. We do not
+
+                                treat her differently; we do not treat her special – she is our 2 ½ year old daughter: the typical toddler. We do not expect
+
+                                pity, or sadness, or sorrow. We have felt these feelings in the past, but we have found that you can accomplish more
+
+                                when you reroute that state of mind toward a more positive goal. We are extremely lucky to have a beautiful daughter –
+
+                                there is only her future to celebrate!
+                            </p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Return to CRAFT Site</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="js/agency.js"></script>
+    <script>
+        $('.yearTag').html(new Date().getFullYear());
+    </script>
+    <script>
+                //var amountScrolled = 300;
+
+                //$(window).scroll(function () {
+                //    if ($(window).scrollTop() > amountScrolled) {
+                //        $('a.back-to-top').fadeIn('slow');
+                //    } else {
+                //        $('a.back-to-top').fadeOut('slow');
+                //    }
+                //});
+
+                $('.buyTickets').click(function (event) {
+                    event.preventDefault();
+                    //$('#buynow').submit();
+                    $('btnBuyNow').click();
+                });
+
+                $('.buyAirCraft').click(function (event) {
+                    event.preventDefault();
+                    $("#buyair").submit(function (event) {
+                        event.preventDefault();
+                    });
+                    return false;
+                });
+    </script>
+    <script>
+        var FBPageID = "497410960410342";
+        var since_unix_timestamp;
+        var until_unix_timestamp;
+        var access_token = "360584827643910|LwgA0jNmqIY-Gt_ZodjomaLQT_I";
+
+
+
+        var fields = "id,name,description,place,timezone,start_time,cover";
+        var someDate = new Date();
+        someDate.setDate(someDate.getDate() - 365);
+        since_unix_timestamp = (someDate / 1000).toString().split('.')[0];
+        until_unix_timestamp = (someDate.setDate(someDate.getDate() + 365)/1000).toString().split('.')[0];
+
+        var json_link = "/" + FBPageID + "/events/attending/?fields=" + fields + "&access_token=" + access_token +
+            "&since=" + since_unix_timestamp.split('.')[0] + "&until=" + until_unix_timestamp;
+
+        function OnFBInit() {
+            FB.api(
+                json_link,
+                function (response) {
+                    if (response && !response.error) {
+                        var data = response.data; //each element in data array is an event
+                        for (i = 0; i < data.length ; i++) {
+                            var tableEntry =
+                                "<tr>" +
+                                "<td rowspan='5' style='width:20em;'>" +
+                                "<img src='" + data[i].cover.source + "' width='200px' />" +
+                                "</td>" +
+                                "</tr>" +
+
+                                "<tr>" +
+                                "<td style='width:15em;'>What:</td>" +
+                                "<td><b>" + data[i].name + "</b></td>" +
+                                "</tr>" +
+
+                                "<tr>" +
+                                "<td>When:</td>" +
+                                "<td>" + new Date(data[i].start_time).toDateString() + "</td>" +
+                                "</tr>" +
+
+                                "<tr>" +
+                                "<td>Where:</td>" +
+                                "<td>" + data[i].place.name + "</td>" +
+                                "</tr>" +
+
+                                //"<tr>" +
+                                //"<td>Description:</td>" +
+                                //"<td>" + data[i].description + "</td>" +
+                                //"</tr>" +
+
+                                "<tr>" +
+                                "<td>Facebook Link:</td>" +
+                                "<td>" +
+                                "<a href='https://www.facebook.com/events/" + data[i].id + "/' target='_blank'>View on Facebook</a>" +
+                                "</td>" +
+                                "</tr>";
+
+                            $("#eventTable").append(tableEntry);
+                        }
+                    }
+                }
+            );
+        }
+    </script>
+</body>
+</html>
