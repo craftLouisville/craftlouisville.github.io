@@ -85,7 +85,71 @@
         .buyAirCraft {
         }
     </style>
+    <script>
+        var FBPageID = "497410960410342";
+        var since_unix_timestamp;
+        var until_unix_timestamp;
+        var access_token = "360584827643910|LwgA0jNmqIY-Gt_ZodjomaLQT_I";
 
+
+
+        var fields = "id,name,description,place,timezone,start_time,cover";
+        var someDate = new Date();
+        someDate.setDate(someDate.getDate() - 365);
+        since_unix_timestamp = (someDate / 1000).toString().split('.')[0];
+        until_unix_timestamp = (someDate.setDate(someDate.getDate() + 365)/1000).toString().split('.')[0];
+
+        var json_link = "/" + FBPageID + "/events/attending/?fields=" + fields + "&access_token=" + access_token +
+            "&since=" + since_unix_timestamp.split('.')[0] + "&until=" + until_unix_timestamp;
+
+        function OnFBInit() {
+            FB.api(
+                json_link,
+                function (response) {
+                    if (response && !response.error) {
+                        var data = response.data; //each element in data array is an event
+                        for (i = 0; i < data.length ; i++) {
+                            var tableEntry =
+                                "<tr>" +
+                                "<td rowspan='5' style='width:20em;'>" +
+                                "<img src='" + data[i].cover.source + "' width='200px' />" +
+                                "</td>" +
+                                "</tr>" +
+
+                                "<tr>" +
+                                "<td style='width:15em;'>What:</td>" +
+                                "<td><b>" + data[i].name + "</b></td>" +
+                                "</tr>" +
+
+                                "<tr>" +
+                                "<td>When:</td>" +
+                                "<td>" + new Date(data[i].start_time).toDateString() + "</td>" +
+                                "</tr>" +
+
+                                "<tr>" +
+                                "<td>Where:</td>" +
+                                "<td>" + data[i].place.name + "</td>" +
+                                "</tr>" +
+
+                                //"<tr>" +
+                                //"<td>Description:</td>" +
+                                //"<td>" + data[i].description + "</td>" +
+                                //"</tr>" +
+
+                                "<tr>" +
+                                "<td>Facebook Link:</td>" +
+                                "<td>" +
+                                "<a href='https://www.facebook.com/events/" + data[i].id + "/' target='_blank'>View on Facebook</a>" +
+                                "</td>" +
+                                "</tr>";
+
+                            $("#eventTable").append(tableEntry);
+                        }
+                    }
+                }
+            );
+        }
+    </script>
 </head>
 <body id="page-top" class="index">
     <script>
@@ -1499,70 +1563,6 @@
                     return false;
                 });
     </script>
-    <script>
-        var FBPageID = "497410960410342";
-        var since_unix_timestamp;
-        var until_unix_timestamp;
-        var access_token = "360584827643910|LwgA0jNmqIY-Gt_ZodjomaLQT_I";
-
-
-
-        var fields = "id,name,description,place,timezone,start_time,cover";
-        var someDate = new Date();
-        someDate.setDate(someDate.getDate() - 365);
-        since_unix_timestamp = (someDate / 1000).toString().split('.')[0];
-        until_unix_timestamp = (someDate.setDate(someDate.getDate() + 365)/1000).toString().split('.')[0];
-
-        var json_link = "/" + FBPageID + "/events/attending/?fields=" + fields + "&access_token=" + access_token +
-            "&since=" + since_unix_timestamp.split('.')[0] + "&until=" + until_unix_timestamp;
-
-        function OnFBInit() {
-            FB.api(
-                json_link,
-                function (response) {
-                    if (response && !response.error) {
-                        var data = response.data; //each element in data array is an event
-                        for (i = 0; i < data.length ; i++) {
-                            var tableEntry =
-                                "<tr>" +
-                                "<td rowspan='5' style='width:20em;'>" +
-                                "<img src='" + data[i].cover.source + "' width='200px' />" +
-                                "</td>" +
-                                "</tr>" +
-
-                                "<tr>" +
-                                "<td style='width:15em;'>What:</td>" +
-                                "<td><b>" + data[i].name + "</b></td>" +
-                                "</tr>" +
-
-                                "<tr>" +
-                                "<td>When:</td>" +
-                                "<td>" + new Date(data[i].start_time).toDateString() + "</td>" +
-                                "</tr>" +
-
-                                "<tr>" +
-                                "<td>Where:</td>" +
-                                "<td>" + data[i].place.name + "</td>" +
-                                "</tr>" +
-
-                                //"<tr>" +
-                                //"<td>Description:</td>" +
-                                //"<td>" + data[i].description + "</td>" +
-                                //"</tr>" +
-
-                                "<tr>" +
-                                "<td>Facebook Link:</td>" +
-                                "<td>" +
-                                "<a href='https://www.facebook.com/events/" + data[i].id + "/' target='_blank'>View on Facebook</a>" +
-                                "</td>" +
-                                "</tr>";
-
-                            $("#eventTable").append(tableEntry);
-                        }
-                    }
-                }
-            );
-        }
-    </script>
+    
 </body>
 </html>
