@@ -86,9 +86,27 @@
         }
     </style>
 
-
 </head>
 <body id="page-top" class="index">
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                appId: '360584827643910',
+                xfbml: true,
+                version: 'v2.8'
+            });
+            FB.AppEvents.logPageView();
+            OnFBInit();
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) { return; }
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
     <!-- Navigation -->
     <!--<a href="#" class="btn btn-xl back-to-top buyTickets">Buy Tickets</a>-->
 
@@ -170,6 +188,25 @@
         </div>
     </header>
 
+    <section id="upcomingEvents" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Upcoming Events</h2>
+                    <style>
+                        .table-hover>tbody>tr:hover 
+                        {background-color:#f6bf01;color:#363B73;}
+
+                        .table-hover>tbody>tr:hover>td>a
+                        {color:#fff;}
+                    </style>
+                    <table class="table table-hover table-responsive table-bordered" id="eventTable" name="eventTable"
+                           style="font-family: Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif;background-color:#363B73;color:white;"></table>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="event">
         <div class="container">
             <div class="row">
@@ -236,7 +273,7 @@
                                 <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
                                 <input class="btn btn-xl back-to-top" type="submit" value="Donate" />
                             </form>
-                             <!--<form action="https://craft.yapsody.com/event/index/37846/craft-2016" method="post" target="_blank">
+                            <!--<form action="https://craft.yapsody.com/event/index/37846/craft-2016" method="post" target="_blank">
                                 <input type="hidden" name="cmd" value="_s-xclick">
                                 <input type="hidden" name="hosted_button_id" value="J99BMJYQBP5J8">
                                 <input type="hidden" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
@@ -1016,7 +1053,7 @@
                             <input type="hidden" name="cmd" value="_s-xclick">
                             <input type="hidden" name="hosted_button_id" value="J99BMJYQBP5J8">
                             <input type="hidden" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-                            
+
                             <input class="btn btn-xl" type="submit" value="Buy Tickets" />
                         </form>-->
                     </div>
@@ -1111,7 +1148,7 @@
             <div class="row" style="text-align:center;">
                 <div class="col-sm-3">
                     <div>
-                        
+
                     </div>
                 </div>
                 <div class="col-sm-3">
@@ -1130,322 +1167,322 @@
                 </div>
                 <div class="col-sm-3">
                     <div>
-                        
+
                     </div>
                 </div>
             </div>
 
         </div>
     </section>
-            <footer>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <span class="copyright">Copyright &copy; CRAFT Louisville <div class="yearTag"></div></span>
-                        </div>
-                        <div class="col-md-4">
-                            <ul class="list-inline social-buttons">
-                                <li>
-                                    <a target="_blank" href="https://www.facebook.com/events/485222601643884/"><i class="fa fa-facebook"></i></a>
-                                </li>
-                                <li>
-                                    <a target="_blank" href="https://www.twitter.com/CRAFTLouisville/"><i class="fa fa-twitter"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-md-4">
-                        </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; CRAFT Louisville <div class="yearTag"></div></span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        <li>
+                            <a target="_blank" href="https://www.facebook.com/events/485222601643884/"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.twitter.com/CRAFTLouisville/"><i class="fa fa-twitter"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Portfolio Modals -->
+    <!-- Use the modals below to showcase details about your portfolio projects! -->
+    <!-- Portfolio Modal 1 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
                     </div>
                 </div>
-            </footer>
-            <!-- Portfolio Modals -->
-            <!-- Use the modals below to showcase details about your portfolio projects! -->
-            <!-- Portfolio Modal 1 -->
-            <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-                <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal">
-                        <div class="lr">
-                            <div class="rl">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-8 col-lg-offset-2">
-                                <div class="modal-body">
-                                    <!-- Project Details Go Here -->
-                                    <h2>Luke's Story</h2>
-                                    <img class="img-responsive img-centered" src="img/team/Luke Champion.jpg" alt="">
-                                    <p>
-                                        Watching 8 year old Luke on the playground or at football practice, you would never guess he was battling a chronic illness. Luke was diagnosed shortly after birth with cystic fibrosis, a genetic disorder that primarily affects his lungs, but also his intestines, pancreas and liver. Luke knows maintenance is the key to keep him healthy, so he doesn't complain about the eight breathing treatments, hour-long lung percussions or 30 medications he has to take daily. His community really rallied to help him feel like a normal kid. After school, you'll find Luke surrounded by his neighbors and playing video games while he completes his breathing treatment. Since Luke's diagnosis, his family members have become passionate advocates of cystic fibrosis research and treatment options. They often speak at events and participate in hospital fundraisers, encouraging donations that will give Luke the best chance at a long and healthy life.
-                                    </p><p>
-                                        Luke is a huge fan of the Kentucky Wildcats and Green Bay Packers.
-                                    </p>
-                                    <button type="button" class="btn btn-primary" data-dismiss="modal">Return to CRAFT Site</button>
-                                </div>
-                            </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Luke's Story</h2>
+                            <img class="img-responsive img-centered" src="img/team/Luke Champion.jpg" alt="">
+                            <p>
+                                Watching 8 year old Luke on the playground or at football practice, you would never guess he was battling a chronic illness. Luke was diagnosed shortly after birth with cystic fibrosis, a genetic disorder that primarily affects his lungs, but also his intestines, pancreas and liver. Luke knows maintenance is the key to keep him healthy, so he doesn't complain about the eight breathing treatments, hour-long lung percussions or 30 medications he has to take daily. His community really rallied to help him feel like a normal kid. After school, you'll find Luke surrounded by his neighbors and playing video games while he completes his breathing treatment. Since Luke's diagnosis, his family members have become passionate advocates of cystic fibrosis research and treatment options. They often speak at events and participate in hospital fundraisers, encouraging donations that will give Luke the best chance at a long and healthy life.
+                            </p><p>
+                                Luke is a huge fan of the Kentucky Wildcats and Green Bay Packers.
+                            </p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Return to CRAFT Site</button>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Portfolio Modal 2 -->
-            <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-                <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal">
-                        <div class="lr">
-                            <div class="rl">
-                            </div>
-                        </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal 2 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
                     </div>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-8 col-lg-offset-2">
-                                <div class="modal-body">
-                                    <!-- Project Details Go Here -->
-                                    <h2>Samuel's Story</h2>
-                                    <img class="img-responsive img-centered" src="img/team/IMG_0719.jpg" alt="">
-                                    <p>
-                                        Samuel's life can be characterized by one word so far. Surprise!
-                                    </p>
-                                    <p>
-                                        After 2 failed attempts at IVF and countless tears and prayers, we had
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Samuel's Story</h2>
+                            <img class="img-responsive img-centered" src="img/team/IMG_0719.jpg" alt="">
+                            <p>
+                                Samuel's life can be characterized by one word so far. Surprise!
+                            </p>
+                            <p>
+                                After 2 failed attempts at IVF and countless tears and prayers, we had
 
-                                        3 frozen embryos left to use to try and get pregnant. These embryos were
+                                3 frozen embryos left to use to try and get pregnant. These embryos were
 
-                                        not ideal from the beginning, and given our previous failed attempts with
+                                not ideal from the beginning, and given our previous failed attempts with
 
-                                        better looking embryos, we had no hope of getting pregnant. In fact we had
+                                better looking embryos, we had no hope of getting pregnant. In fact we had
 
-                                        an appointment already set up across the country to see a specialist and
+                                an appointment already set up across the country to see a specialist and
 
-                                        try to start over. But March 21, 2014 we finally heard the words we had
+                                try to start over. But March 21, 2014 we finally heard the words we had
 
-                                        been waiting over a year to hear "Congratulations, you are pregnant!" And
+                                been waiting over a year to hear "Congratulations, you are pregnant!" And
 
-                                        so was the start of our miracle baby.
-                                    </p>
-                                    <p>
-                                        Pre-natal screening identified that mom was a CF carrier but follow up
+                                so was the start of our miracle baby.
+                            </p>
+                            <p>
+                                Pre-natal screening identified that mom was a CF carrier but follow up
 
-                                        testing on Dad for the 30 most common mutations revealed he was not a
+                                testing on Dad for the 30 most common mutations revealed he was not a
 
-                                        carrier. We had an uneventful, wonderful pregnancy and after a very long
+                                carrier. We had an uneventful, wonderful pregnancy and after a very long
 
-                                        few days of labor and delivery, Samuel was born on December 1, 2014 at
+                                few days of labor and delivery, Samuel was born on December 1, 2014 at
 
-                                        3:38 in the morning. He was perfect, weighing in at the generous size of 9
+                                3:38 in the morning. He was perfect, weighing in at the generous size of 9
 
-                                        lb 2 oz and went home from the hospital 2 days later.
+                                lb 2 oz and went home from the hospital 2 days later.
 
-                                        One week after being home, while we were busy trying to figure out how to
+                                One week after being home, while we were busy trying to figure out how to
 
-                                        be a mom and a dad we got a call saying that Samuel's newborn screen
+                                be a mom and a dad we got a call saying that Samuel's newborn screen
 
-                                        came up positive and he may have cystic fibrosis. He had a follow up
+                                came up positive and he may have cystic fibrosis. He had a follow up
 
-                                        sweat test and then on December 19th around 4 pm we got THE
+                                sweat test and then on December 19th around 4 pm we got THE
 
-                                        CALL.
-                                    </p>
-                                    <p>
-                                        THE CALL no parent wants to get. The CALL that tells you there is
+                                CALL.
+                            </p>
+                            <p>
+                                THE CALL no parent wants to get. The CALL that tells you there is
 
-                                        something wrong with your baby, The CALL that says your baby is hurt,
+                                something wrong with your baby, The CALL that says your baby is hurt,
 
-                                        The CALL that every parent dreads, The CALL that stops the whole world
+                                The CALL that every parent dreads, The CALL that stops the whole world
 
-                                        and takes your breath away at the same time. We were brokenhearted, in
+                                and takes your breath away at the same time. We were brokenhearted, in
 
-                                        disbelief and we couldn't believe that God would do this to our baby. Mom
+                                disbelief and we couldn't believe that God would do this to our baby. Mom
 
-                                        clutched her newborn to her chest and fell to the ground on the kitchen
+                                clutched her newborn to her chest and fell to the ground on the kitchen
 
-                                        floor screaming out and asking God why? This was the second Surprise
+                                floor screaming out and asking God why? This was the second Surprise
 
-                                        that little Samuel would bring to our lives.  This was the call that told us our
+                                that little Samuel would bring to our lives.  This was the call that told us our
 
-                                        perfect baby had a deadly disease.
-                                    </p>
-                                    <p>
-                                        So there we were, going through the motions of daily life with a newborn
+                                perfect baby had a deadly disease.
+                            </p>
+                            <p>
+                                So there we were, going through the motions of daily life with a newborn
 
-                                        trying to wrap our heads around the fact that our perfect baby had a deadly
+                                trying to wrap our heads around the fact that our perfect baby had a deadly
 
-                                        disease. We researched, started medications, found doctors and sought
+                                disease. We researched, started medications, found doctors and sought
 
-                                        out specialists. We learned how to do chest physical therapy, found
+                                out specialists. We learned how to do chest physical therapy, found
 
-                                        researchers willing to work with us and made new friends. We were angry
+                                researchers willing to work with us and made new friends. We were angry
 
-                                        at God, yelled at God and thanked God all at the same time. And
+                                at God, yelled at God and thanked God all at the same time. And
 
-                                        somehow here we are, 9 months later, with a perfectly healthy baby boy.
+                                somehow here we are, 9 months later, with a perfectly healthy baby boy.
 
-                                        He has grown well and has had no issues so far. We hope that with our
+                                He has grown well and has had no issues so far. We hope that with our
 
-                                        continued efforts, he will remain healthy.
+                                continued efforts, he will remain healthy.
 
-                                    </p>
-                                    <p>
-                                        Our family has jumped in with both feet, and our extended family and
+                            </p>
+                            <p>
+                                Our family has jumped in with both feet, and our extended family and
 
-                                        friends have jumped in with us. Team Samuel Strong has raised over
+                                friends have jumped in with us. Team Samuel Strong has raised over
 
-                                        $20,000 this year to find a cure for Samuel and everyone else affected by
+                                $20,000 this year to find a cure for Samuel and everyone else affected by
 
-                                        this disease. And, out of a labor of love, 3 families affected by this disease
+                                this disease. And, out of a labor of love, 3 families affected by this disease
 
-                                        created CRAFT. What will be known as one of the premier events in
+                                created CRAFT. What will be known as one of the premier events in
 
-                                        Louisville year after year started from a few parents that just hope to see
+                                Louisville year after year started from a few parents that just hope to see
 
-                                        their children live long, healthy, happy lives.
-                                    </p>
-                                    <button type="button" class="btn btn-primary" data-dismiss="modal">Return to CRAFT Site</button>
-                                </div>
-                            </div>
+                                their children live long, healthy, happy lives.
+                            </p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Return to CRAFT Site</button>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Portfolio Modal 3 -->
-            <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-                <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal">
-                        <div class="lr">
-                            <div class="rl">
-                            </div>
-                        </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal 3 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
                     </div>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-8 col-lg-offset-2">
-                                <div class="modal-body">
-                                    <!-- Project Details Go Here -->
-                                    <h2>Alex's Story</h2>
-                                    <img class="img-responsive img-centered" src="img/team/IMG_3221.jpg" alt="">
-                                    <p>
-                                        One glance at Alex and you will see that she is a typical 2 ½ year old. She is energetic, happy, curious, and loving. She
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Alex's Story</h2>
+                            <img class="img-responsive img-centered" src="img/team/IMG_3221.jpg" alt="">
+                            <p>
+                                One glance at Alex and you will see that she is a typical 2 ½ year old. She is energetic, happy, curious, and loving. She
 
-                                        loves to dance (to Taylor Swift), color, learn new things, and swim in the pool. She thinks bugs are gross, burps are
+                                loves to dance (to Taylor Swift), color, learn new things, and swim in the pool. She thinks bugs are gross, burps are
 
-                                        funny, and she doesn’t like her hair brushed – at all. She amazes us every single day with a new word or knowledge bit.
+                                funny, and she doesn’t like her hair brushed – at all. She amazes us every single day with a new word or knowledge bit.
 
-                                        And she tries our patience with the usual toddler outbursts and attitudes.
-                                    </p><p>
-                                        If you watch long enough, though, you may see another side to this little girl. She is patient (most of the time), cautious
+                                And she tries our patience with the usual toddler outbursts and attitudes.
+                            </p><p>
+                                If you watch long enough, though, you may see another side to this little girl. She is patient (most of the time), cautious
 
-                                        (usually), and incredibly brave (always). She sits through hours of therapy and breathing treatments each day. She takes
+                                (usually), and incredibly brave (always). She sits through hours of therapy and breathing treatments each day. She takes
 
-                                        more medications than most adults (and has done so since she was just a few weeks old). Before meals and snacks, she
+                                more medications than most adults (and has done so since she was just a few weeks old). Before meals and snacks, she
 
-                                        takes enzymes that help her body absorb nutrients from the food she eats; she takes special vitamins and other
+                                takes enzymes that help her body absorb nutrients from the food she eats; she takes special vitamins and other
 
-                                        medications as well. In the past year, Alex has spent around 8.9 days’ worth of time inhaling nebulized treatments to
+                                medications as well. In the past year, Alex has spent around 8.9 days’ worth of time inhaling nebulized treatments to
 
-                                        help her breathe, endured close to 15 days’ worth of time doing vest therapy to keep her lungs clear, and taken almost
+                                help her breathe, endured close to 15 days’ worth of time doing vest therapy to keep her lungs clear, and taken almost
 
-                                        2,200 pancreatic enzymes to absorb nutrients from her meals. We work very hard (and diligently), and we are aggressive
+                                2,200 pancreatic enzymes to absorb nutrients from her meals. We work very hard (and diligently), and we are aggressive
 
-                                        with treatment to ensure that Alex stays as healthy as possible.
-                                    </p><p>
-                                        Alexandra Elaine was born in April 2013. It was a very easy pregnancy and an even easier birth. We stayed in the hospital
+                                with treatment to ensure that Alex stays as healthy as possible.
+                            </p><p>
+                                Alexandra Elaine was born in April 2013. It was a very easy pregnancy and an even easier birth. We stayed in the hospital
 
-                                        for a few days before being sent home as a new family of three. We were equally excited and scared – newborns can be
+                                for a few days before being sent home as a new family of three. We were equally excited and scared – newborns can be
 
-                                        very intimidating to new parents! But Alex was a perfect baby – she loved to be held (but not swaddled!), slept, ate, and
+                                very intimidating to new parents! But Alex was a perfect baby – she loved to be held (but not swaddled!), slept, ate, and
 
-                                        rarely cried. At five days old, when we had our first visit to the pediatrician’s office for the usual well-baby checkup, we
+                                rarely cried. At five days old, when we had our first visit to the pediatrician’s office for the usual well-baby checkup, we
 
-                                        were told that Alex was not back up to her birth weight. Slightly concerned, we were told to come back in another week
+                                were told that Alex was not back up to her birth weight. Slightly concerned, we were told to come back in another week
 
-                                        and not to worry. “This isn’t unusual,” they said. We returned the following week, expecting some weight gain.
+                                and not to worry. “This isn’t unusual,” they said. We returned the following week, expecting some weight gain.
 
-                                        However, despite feeding every two hours around the clock, Alex was diagnosed with ‘Failure to Thrive,’ as she still had
+                                However, despite feeding every two hours around the clock, Alex was diagnosed with ‘Failure to Thrive,’ as she still had
 
-                                        yet to get back up to her birth weight after nearly two weeks. The pediatrician had noted that she had some abnormal
+                                yet to get back up to her birth weight after nearly two weeks. The pediatrician had noted that she had some abnormal
 
-                                        findings with her newborn screening; the follow-up genetic testing later would confirm the diagnosis of Cystic Fibrosis
+                                findings with her newborn screening; the follow-up genetic testing later would confirm the diagnosis of Cystic Fibrosis
 
-                                        (CF).
-                                    </p><p>
-                                        We were crushed and confused – it came completely out of the blue. Neither side knew of any family history of this
+                                (CF).
+                            </p><p>
+                                We were crushed and confused – it came completely out of the blue. Neither side knew of any family history of this
 
-                                        disease. It was easily the most difficult day/week/month/year of our lives. Having a newborn is hard enough, but getting
+                                disease. It was easily the most difficult day/week/month/year of our lives. Having a newborn is hard enough, but getting
 
-                                        that kind of diagnosis on top of it – well, it was definitely hard.
+                                that kind of diagnosis on top of it – well, it was definitely hard.
 
-                                        That same week, we took Alex to her first (of many) CF Clinic appointments where we met an amazing team of doctors,
+                                That same week, we took Alex to her first (of many) CF Clinic appointments where we met an amazing team of doctors,
 
-                                        nurses, respiratory therapists, social workers, and dieticians. We were able to start medications that same day and saw
+                                nurses, respiratory therapists, social workers, and dieticians. We were able to start medications that same day and saw
 
-                                        an immediate improvement in weight gain – those medications saved her life. Within a week, Alex had gained more than
+                                an immediate improvement in weight gain – those medications saved her life. Within a week, Alex had gained more than
 
-                                        a few pounds. It was truly remarkable. Alex’s weight issue is caused by the inability of her body to release enzymes that
+                                a few pounds. It was truly remarkable. Alex’s weight issue is caused by the inability of her body to release enzymes that
 
-                                        aid in the breakdown and absorption of the food she eats. It was such a great relief to see our baby girl beginning to
+                                aid in the breakdown and absorption of the food she eats. It was such a great relief to see our baby girl beginning to
 
-                                        thrive!
-                                    </p><p>
-                                        We reached out to the Cystic Fibrosis Foundation (CFF) shortly after Alex’s diagnosis. We wanted to do something; but,
+                                thrive!
+                            </p><p>
+                                We reached out to the Cystic Fibrosis Foundation (CFF) shortly after Alex’s diagnosis. We wanted to do something; but,
 
-                                        because there is currently no cure for this disease, we felt helpless. We began doing the only thing that we could think of
+                                because there is currently no cure for this disease, we felt helpless. We began doing the only thing that we could think of
 
-                                        – raising money for the CF Foundation to aid in a fight for a medical breakthrough! Because Cystic Fibrosis is considered
+                                – raising money for the CF Foundation to aid in a fight for a medical breakthrough! Because Cystic Fibrosis is considered
 
-                                        an Orphan Disease, it does not get the attention of big pharmaceutical companies. Nobody is competing for the “Next
+                                an Orphan Disease, it does not get the attention of big pharmaceutical companies. Nobody is competing for the “Next
 
-                                        Big CF Drug” like they are for other, more prominent diseases (like heart disease or breast cancer). There is no major
+                                Big CF Drug” like they are for other, more prominent diseases (like heart disease or breast cancer). There is no major
 
-                                        incentive for companies to invest in CF research. Without the CFF and its aggressive efforts in eradicating Cystic Fibrosis,
+                                incentive for companies to invest in CF research. Without the CFF and its aggressive efforts in eradicating Cystic Fibrosis,
 
-                                        we would not be able to enjoy our daughter like we do today. In the last two years, our family and friends alone have
+                                we would not be able to enjoy our daughter like we do today. In the last two years, our family and friends alone have
 
-                                        raised over $63,000 for the CF Foundation. But this is not enough… In an effort to make an even bigger impact and
+                                raised over $63,000 for the CF Foundation. But this is not enough… In an effort to make an even bigger impact and
 
-                                        ensure that our daughter will have a bright and healthy future ahead, we decided to join forces with other families
+                                ensure that our daughter will have a bright and healthy future ahead, we decided to join forces with other families
 
-                                        fighting the same battle. When a group of CF parents get together – mighty things happen – and events like CRAFT are
+                                fighting the same battle. When a group of CF parents get together – mighty things happen – and events like CRAFT are
 
-                                        born.
-                                    </p><p>
-                                        Alexandra means “Protector of Mankind” in Greek. Before Alex was born, we decided that we wanted a strong name for
+                                born.
+                            </p><p>
+                                Alexandra means “Protector of Mankind” in Greek. Before Alex was born, we decided that we wanted a strong name for
 
-                                        our daughter – we just didn’t realize how strong she would be. Alexandra Elaine will definitely make miracles. We do not
+                                our daughter – we just didn’t realize how strong she would be. Alexandra Elaine will definitely make miracles. We do not
 
-                                        treat her differently; we do not treat her special – she is our 2 ½ year old daughter: the typical toddler. We do not expect
+                                treat her differently; we do not treat her special – she is our 2 ½ year old daughter: the typical toddler. We do not expect
 
-                                        pity, or sadness, or sorrow. We have felt these feelings in the past, but we have found that you can accomplish more
+                                pity, or sadness, or sorrow. We have felt these feelings in the past, but we have found that you can accomplish more
 
-                                        when you reroute that state of mind toward a more positive goal. We are extremely lucky to have a beautiful daughter –
+                                when you reroute that state of mind toward a more positive goal. We are extremely lucky to have a beautiful daughter –
 
-                                        there is only her future to celebrate!
-                                    </p>
-                                    <button type="button" class="btn btn-primary" data-dismiss="modal">Return to CRAFT Site</button>
-                                </div>
-                            </div>
+                                there is only her future to celebrate!
+                            </p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Return to CRAFT Site</button>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
 
-            <!-- jQuery -->
-            <script src="js/jquery.js"></script>
-            <!-- Bootstrap Core JavaScript -->
-            <script src="js/bootstrap.min.js"></script>
-            <!-- Plugin JavaScript -->
-            <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-            <script src="js/classie.js"></script>
-            <script src="js/cbpAnimatedHeader.js"></script>
-            <!-- Contact Form JavaScript -->
-            <script src="js/jqBootstrapValidation.js"></script>
-            <script src="js/contact_me.js"></script>
-            <!-- Custom Theme JavaScript -->
-            <script src="js/agency.js"></script>
-            <script>
-                $('.yearTag').html(new Date().getFullYear());
-            </script>
-            <script>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="js/agency.js"></script>
+    <script>
+        $('.yearTag').html(new Date().getFullYear());
+    </script>
+    <script>
                 //var amountScrolled = 300;
 
                 //$(window).scroll(function () {
@@ -1469,6 +1506,71 @@
                     });
                     return false;
                 });
-            </script>
+    </script>
+    <script>
+        var FBPageID = "497410960410342";
+        var since_unix_timestamp;
+        var until_unix_timestamp;
+        var access_token = "360584827643910|LwgA0jNmqIY-Gt_ZodjomaLQT_I";
+
+
+
+        var fields = "id,name,description,place,timezone,start_time,cover";
+        var someDate = new Date();
+        someDate.setDate(someDate.getDate() - 365);
+        since_unix_timestamp = (someDate / 1000).toString().split('.')[0];
+        until_unix_timestamp = (someDate.setDate(someDate.getDate() + 365)/1000).toString().split('.')[0];
+
+        var json_link = "/" + FBPageID + "/events/attending/?fields=" + fields + "&access_token=" + access_token +
+            "&since=" + since_unix_timestamp.split('.')[0] + "&until=" + until_unix_timestamp;
+
+        function OnFBInit() {
+            FB.api(
+                json_link,
+                function (response) {
+                    if (response && !response.error) {
+                        var data = response.data; //each element in data array is an event
+                        for (i = 0; i < data.length ; i++) {
+                            var tableEntry =
+                                "<tr>" +
+                                "<td rowspan='5' style='width:20em;vertical-align:middle;background-color:#363B73;'>" +
+                                "<img src='" + data[i].cover.source + "' width='200px' />" +
+                                "</td>" +
+                                "</tr>" +
+
+                                "<tr>" +
+                                "<td style='width:15em;'>What:</td>" +
+                                "<td><b>" + data[i].name + "</b></td>" +
+                                "</tr>" +
+
+                                "<tr>" +
+                                "<td>When:</td>" +
+                                "<td>" + new Date(data[i].start_time).toDateString() + "</td>" +
+                                "</tr>" +
+
+                                "<tr>" +
+                                "<td>Where:</td>" +
+                                "<td>" + data[i].place.name + "</td>" +
+                                "</tr>" +
+
+                                //"<tr>" +
+                                //"<td>Description:</td>" +
+                                //"<td>" + data[i].description + "</td>" +
+                                //"</tr>" +
+
+                                "<tr>" +
+                                "<td>Facebook Link:</td>" +
+                                "<td>" +
+                                "<a href='https://www.facebook.com/events/" + data[i].id + "/' target='_blank'>View on Facebook</a>" +
+                                "</td>" +
+                                "</tr>";
+
+                            $("#eventTable").append(tableEntry);
+                        }
+                    }
+                }
+            );
+        }
+    </script>
 </body>
 </html>
